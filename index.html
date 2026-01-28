@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikhil Oberoi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar" id="navbar">
+    <h1 class="logo">Nikhil Oberoi</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="hero-img">
+        <img src="MY.jpg" alt="My Photo">
+      </div>
+
+      <div class="hero-text">
+        <h2>Hello, I'm <span>Nikhil Oberai</span></h2>
+        <h3>
+          <span id="typing-text"></span>
+        </h3>
+
+        <p>Built 10+ live applications used by real clients</p>
+
+        <div class="stats">
+
+          <div>
+            <h4 class="counter" data-target="10">0</h4>
+            <span>Live Apps</span>
+          </div>
+
+          <div>
+            <h4 class="counter" data-target="3">0</h4>
+            <span>Years Experience</span>
+          </div>
+
+        </div>
+
+
+        <button onclick="document.getElementById('projects').scrollIntoView()">
+          View My Work
+        </button>
+        <a href="resume.pdf" download class="resume-btn">
+          Download Resume
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </section>
+  <div class="divider"></div>
+
+
+  <!-- PROJECTS -->
+
+  <section id="projects" class="projects fade-up">
+    <h2>My Projects</h2>
+
+    <div class="project-grid">
+
+      <div class="card">
+
+        <img src="images/popular.png" class="project-img">
+
+        <h3>Popular Patient App</h3>
+
+        <p>
+          A full-scale healthcare mobile application enabling patients to book appointments, manage medical
+          records,
+          view doctor availability, and receive real-time notifications for lab tests and consultations.
+        </p>
+
+        <ul class="features">
+          <li>Appointment booking system</li>
+          <li>Medical report management</li>
+          <li>Push notifications</li>
+          <li>REST API integrations</li>
+        </ul>
+
+        <p class="role">Role: Lead React Native Developer</p>
+
+        <a href="https://play.google.com/store/apps/details?id=com.tenwek&pcampaignid=web_share" target="_blank">
+          View on Play Store
+        </a>
+
+      </div>
+
+
+      <div class="card">
+
+        <img src="images/onTimepay.webp" class="project-img">
+
+        <h3>OntimePay</h3>
+
+        <p>
+          A digital wallet and payment application allowing users to recharge mobiles, pay utility bills,
+          add wallet balance, and manage daily transactions securely with smooth user experience.
+        </p>
+
+        <ul class="features">
+          <li>Wallet & payment system</li>
+          <li>Mobile recharge & bill payments</li>
+          <li>Secure authentication</li>
+          <li>Real-time API processing</li>
+        </ul>
+
+        <p class="role">Role: Full Stack Mobile Developer</p>
+
+        <a href="https://play.google.com/store/apps/details?id=com.ontimepay&pcampaignid=web_share" target="_blank">
+          View on Play Store
+        </a>
+
+      </div>
+
+
+      <div class="card">
+
+        <img src="images/bonzorfashion.webp" class="project-img">
+
+        <h3>Bonzor Fashion</h3>
+
+        <p>
+          A modern e-commerce fashion app built for seamless product browsing, ordering, and payment processing
+          with optimized performance and intuitive UI.
+        </p>
+
+        <ul class="features">
+          <li>Product catalog</li>
+          <li>Secure payment gateway</li>
+          <li>Order tracking</li>
+          <li>Backend API integrations</li>
+        </ul>
+
+        <p class="role">Role: React Native Developer</p>
+
+        <a href="https://play.google.com/store/apps/details?id=com.bonzorfashion&pcampaignid=web_share" target="_blank">
+          View on Play Store
+        </a>
+
+      </div>
+
+
+      <div class="card">
+
+        <img src="images/Rombo.webp" class="project-img">
+
+        <h3>Rombo Employee Tracking</h3>
+
+        <p>
+          A workforce management app for tracking employee attendance, real-time location, and productivity
+          using secure authentication and backend APIs.
+        </p>
+
+        <ul class="features">
+          <li>Live location tracking</li>
+          <li>Attendance system</li>
+          <li>Biometric authentication</li>
+          <li>Admin dashboard integration</li>
+        </ul>
+
+        <p class="role">Role: Lead Mobile Developer</p>
+
+        <a href="https://play.google.com/store/search?q=Rombo&c=apps&hl=en_IN" target="_blank">
+          View on Play Store
+        </a>
+
+      </div>
+
+      <div class="card">
+
+        <div class="img-box">
+          <img src="images/gtc.png">
+          <div class="overlay">
+            <span style="color:white;">Client Delivered</span>
+          </div>
+        </div>
+
+        <h3>GTC Cabs (Cab Booking App)</h3>
+
+        <p>
+          A complete cab booking and management system designed to handle ride bookings, user flows,
+          and real-time data with smooth performance.
+        </p>
+
+        <ul class="features">
+          <li>Cab booking & management system</li>
+          <li>Redux for global state management</li>
+          <li>REST API integrations</li>
+          <li>Android deployment handling</li>
+        </ul>
+
+        <p class="role">Role: Lead React Native Developer</p>
+
+        <span class="private-tag">Private Client Project</span>
+
+      </div>
+
+      <div class="card">
+
+        <div class="img-box">
+          <img src="images/3d.jpg">
+          <div class="overlay">
+            <span style="color:white;">Client Delivered</span>
+          </div>
+        </div>
+
+        <h3>3D Face Mesh (Face Detection App)</h3>
+
+        <p>
+          A real-time face detection and mesh mapping application capturing accurate facial coordinates
+          for enhanced user interaction and AI-driven features.
+        </p>
+
+        <ul class="features">
+          <li>Real-time face detection</li>
+          <li>3D face coordinate mapping</li>
+          <li>USB hardware integration</li>
+          <li>Vision Camera & face detector</li>
+          <li>Performance optimization</li>
+        </ul>
+
+        <p class="role">Role: React Native Developer</p>
+
+        <span class="private-tag">Private Client Project</span>
+
+      </div>
+
+
+
+
+
+
+    </div>
+  </section>
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+
+  <section id="about" class="about fade-up">
+    <h2>About Me</h2>
+    <p>
+      I am a React Native Developer with 2+ years of experience building high-performance mobile applications
+      for Android and iOS. I specialize in creating scalable apps with clean UI, secure authentication,
+      REST API integration, real-time features, and performance optimization.
+
+      I have successfully delivered 10+ live applications across healthcare, fintech, e-commerce,
+      employee tracking, and AI-based solutions.
+    </p>
+
+  </section>
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="contact fade-up">
+    <h2>Contact</h2>
+
+    <div class="contact-links">
+
+      <a href="mailto:oberoinikhil1999@gmail.com" class="contact-item">
+        📧 oberoinikhil1999@gmail.com
+      </a>
+
+      <a href="www.linkedin.com/in/nikhil-oberoi-1b2701217" target="_blank" class="contact-item">
+        💼 LinkedIn Profile
+      </a>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <footer>
+    © 2022 Nikhil Oberoi. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
