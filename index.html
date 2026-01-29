@@ -10,14 +10,17 @@
 
 <body>
 
-  <header class="navbar" id="navbar">
-    <h1 class="logo">Nikhil Oberoi</h1>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+ <header class="navbar" id="navbar">
+  <div class="nav-container">
+    <h1 class="logo">Nikhil <span>Oberoi</span></h1>
+    <nav class="nav-links">
+      <a href="#projects"><i class="icon-folder"></i> Projects</a>
+      <a href="#experience"><i class="icon-briefcase"></i> Experience</a>
+      <a href="#about"><i class="icon-user"></i> About</a>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
     </nav>
-  </header>
+  </div>
+</header>
 
   <!-- HERO -->
 
@@ -77,19 +80,28 @@
       <div class="card-inner">
         <div class="project-img-box">
           <img src="popular.png" alt="Popular Patient App">
-          <div class="status-badge">Live on Store</div>
+          <div class="status-badge">Healthcare</div>
         </div>
         <div class="project-info">
           <h3>Popular Patient App</h3>
-          <p>Full-scale healthcare ecosystem for real-time medical management and doctor consultations.</p>
-          <div class="tech-stack">
-            <span>React Native</span>
-            <span>Redux</span>
-            <span>REST API</span>
-          </div>
-          <div class="card-footer">
-             <a href="https://play.google.com/store/apps/details?id=com.tenwek" target="_blank" class="view-btn">View App</a>
-          </div>
+          <p>Full-scale healthcare ecosystem for real-time medical management and consultations.</p>
+          <div class="tech-stack"><span>React Native</span><span>Redux</span><span>REST API</span></div>
+          <div class="card-footer"><a href="https://play.google.com/store/apps/details?id=com.tenwek" target="_blank" class="view-btn">View Store</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="card-inner">
+        <div class="project-img-box">
+          <img src="bonzorfashion.webp" alt="Bonzor Fashion" class="app-icon-fix">
+          <div class="status-badge">E-Commerce</div>
+        </div>
+        <div class="project-info">
+          <h3>Bonzor Fashion</h3>
+          <p>Modern fashion marketplace featuring seamless browsing and secure payment gateway.</p>
+          <div class="tech-stack"><span>Product Catalog</span><span>Payments</span><span>Optimization</span></div>
+          <div class="card-footer"><a href="https://play.google.com/store/apps/details?id=com.bonzorfashion" target="_blank" class="view-btn">View Store</a></div>
         </div>
       </div>
     </div>
@@ -102,15 +114,24 @@
         </div>
         <div class="project-info">
           <h3>OntimePay</h3>
-          <p>Digital wallet for secure recharges, bill payments, and real-time transaction tracking.</p>
-          <div class="tech-stack">
-            <span>Full Stack</span>
-            <span>Auth</span>
-            <span>Payments</span>
-          </div>
-          <div class="card-footer">
-             <a href="https://play.google.com/store/apps/details?id=com.ontimepay" target="_blank" class="view-btn">View App</a>
-          </div>
+          <p>Digital wallet for secure recharges, bill payments, and real-time tracking.</p>
+          <div class="tech-stack"><span>Wallet</span><span>Auth</span><span>API</span></div>
+          <div class="card-footer"><a href="https://play.google.com/store/apps/details?id=com.ontimepay" target="_blank" class="view-btn">View Store</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="card-inner">
+        <div class="project-img-box">
+          <img src="Rombo.webp" alt="Rombo Tracking" class="app-icon-fix">
+          <div class="status-badge">Enterprise</div>
+        </div>
+        <div class="project-info">
+          <h3>Rombo Tracking</h3>
+          <p>Workforce management app for real-time location and employee productivity.</p>
+          <div class="tech-stack"><span>Live Tracking</span><span>Biometric</span><span>Admin Panel</span></div>
+          <div class="card-footer"><a href="https://play.google.com/store/search?q=Rombo" target="_blank" class="view-btn">View Store</a></div>
         </div>
       </div>
     </div>
@@ -123,15 +144,9 @@
         </div>
         <div class="project-info">
           <h3>GTC Cabs</h3>
-          <p>Complete taxi dispatch and booking management system with global state handling.</p>
-          <div class="tech-stack">
-            <span>Google Maps</span>
-            <span>Real-time</span>
-            <span>Redux</span>
-          </div>
-          <div class="card-footer">
-             <span class="private-tag">Enterprise System</span>
-          </div>
+          <p>Taxi dispatch system with complex user flows and Android deployment handling.</p>
+          <div class="tech-stack"><span>Maps</span><span>Real-time</span><span>Redux</span></div>
+          <div class="card-footer"><span class="private-tag">Enterprise System</span></div>
         </div>
       </div>
     </div>
@@ -140,19 +155,13 @@
       <div class="card-inner">
         <div class="project-img-box">
           <img src="3d.jpg" alt="3D Face Mesh">
-          <div class="ai-badge">AI / Vision</div>
+          <div class="ai-badge">AI Vision</div>
         </div>
         <div class="project-info">
           <h3>3D Face Mesh</h3>
-          <p>Advanced real-time AI face detection capturing 3D coordinates via Vision Camera.</p>
-          <div class="tech-stack">
-            <span>AI</span>
-            <span>Vision Camera</span>
-            <span>Hardware</span>
-          </div>
-          <div class="card-footer">
-             <span class="private-tag">Private Project</span>
-          </div>
+          <p>Real-time AI detection capturing 3D facial coordinates via Vision Camera.</p>
+          <div class="tech-stack"><span>AI</span><span>Hardware</span><span>Performance</span></div>
+          <div class="card-footer"><span class="private-tag">Private Project</span></div>
         </div>
       </div>
     </div>
