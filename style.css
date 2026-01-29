@@ -271,6 +271,157 @@ nav a:hover {
   display: block;
 }
 
+/* PROJECTS SECTION UPGRADE */
+.projects-section {
+  padding: 100px 20px;
+  background: #0f172a;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  perspective: 1000px; /* Essential for 3D hover */
+}
+
+.project-card {
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-inner {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+}
+
+/* Hover Effect: Card lifts and glows */
+.project-card:hover .card-inner {
+  transform: translateY(-15px) rotateX(5deg);
+  border-color: #38bdf8;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(56, 189, 248, 0.2);
+}
+
+.project-img-box {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover .project-img-box img {
+  transform: scale(1.1);
+}
+
+/* Badges & Tags */
+.status-badge, .ai-badge {
+  position: absolute;
+  top: 15px; right: 15px;
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.private-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  font-weight: bold;
+}
+
+.project-info {
+  padding: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: white;
+}
+
+.project-info p {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Tech Pills */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.tech-stack span {
+  background: rgba(56, 189, 248, 0.1);
+  color: #38bdf8;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: auto;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  border-color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+/* MOBILE "CRAZY" LAYOUT */
+@media (max-width: 768px) {
+  .project-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 30px;
+    margin: 30px -10px;
+  }
+
+  .project-card {
+    min-width: 85vw;
+    scroll-snap-align: center;
+  }
+  
+  /* Hide the scrollbar for clean look */
+  .project-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 
 
 
