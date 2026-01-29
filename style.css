@@ -16,33 +16,96 @@ body {
 
 /* NAVBAR */
 
+/* PREMIUM NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
-  background: #020617;
+  padding: 15px 0;
+  background: rgba(15, 23, 42, 0.01); /* Start transparent */
+  backdrop-filter: blur(0px);
   z-index: 1000;
-  transition: 0.3s;
+  transition: all 0.4s ease;
 }
 
 .navbar.scrolled {
-  background: rgba(2, 6, 23, 0.95);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(15px);
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.2);
 }
 
-nav a {
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
   color: white;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #94a3b8;
   text-decoration: none;
-  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-nav a:hover {
-  color: #38bdf8
+.nav-links a:hover {
+  color: #38bdf8;
 }
 
+.nav-cta {
+  background: #38bdf8;
+  color: #0f172a !important;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 700 !important;
+}
+
+/* APP ICON FIX */
+.app-icon-fix {
+  object-fit: contain !important; /* Prevents stretching */
+  background: white; /* Adds contrast for logo-based icons */
+  padding: 10px; /* Gives logo room to breathe */
+}
+
+/* PROJECT GRID CRAZY SCROLL (MOBILE) */
+@media (max-width: 768px) {
+  .nav-links { display: none; } /* Hide boring links on mobile */
+  
+  .project-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 -20px;
+  }
+
+  .project-card {
+    min-width: 85vw;
+    scroll-snap-align: center;
+  }
+}
 /* HERO */
 
 /* MODERN HERO SECTION */
@@ -277,14 +340,7 @@ nav a:hover {
   background: #0f172a;
 }
 
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 50px auto;
-  perspective: 1000px; /* Essential for 3D hover */
-}
+
 
 .project-card {
   transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
