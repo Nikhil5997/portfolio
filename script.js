@@ -95,3 +95,23 @@ faders.forEach((el, index) => {
   el.style.transitionDelay = `${index * 0.15}s`; 
   observer.observe(el);
 });
+
+const faders = document.querySelectorAll(".fade-up");
+
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -50px 0px"
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      // Small delay for cards to pop in one-by-one
+      setTimeout(() => {
+        entry.target.classList.add("show");
+      }, index * 100); 
+    }
+  });
+}, observerOptions);
+
+faders.forEach(el => observer.observe(el));
