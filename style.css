@@ -312,68 +312,100 @@ footer {
   transform:translateY(-4px);
 }
 /* EXPERIENCE TIMELINE */
-.experience {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: 0 auto;
+/* EXPERIENCE SECTION */
+
+.experience{
+  padding:80px 60px;
+  text-align:center;
 }
 
-.timeline {
-  position: relative;
-  border-left: 3px solid #38bdf8;
-  margin: 40px auto;
-  padding-left: 30px;
-  text-align: left;
+.timeline{
+  position:relative;
+  max-width:800px;
+  margin:50px auto;
 }
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 50px;
+.timeline::before{
+  content:'';
+  position:absolute;
+  left:50%;
+  top:0;
+  width:3px;
+  height:100%;
+  background:#38bdf8;
+  transform:translateX(-50%);
 }
 
-.timeline-dot {
-  position: absolute;
-  left: -38px;
-  top: 5px;
-  width: 14px;
-  height: 14px;
-  background: #38bdf8;
-  border-radius: 50%;
-  box-shadow: 0 0 15px #38bdf8;
+.timeline-item{
+  display:flex;
+  justify-content:flex-start;
+  margin-bottom:60px;
+  position:relative;
 }
 
-.timeline-date {
-  font-weight: bold;
-  color: #38bdf8;
-  margin-bottom: 8px;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.timeline-item:nth-child(even){
+  justify-content:flex-end;
 }
 
-.timeline-content {
-  background: #020617;
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid rgba(56, 189, 248, 0.1);
-  transition: 0.3s;
+.timeline-content{
+  background:#020617;
+  padding:20px 25px;
+  border-radius:15px;
+  width:45%;
+  box-shadow:0 10px 20px rgba(0,0,0,0.5);
+  transition:0.4s;
 }
 
-.timeline-content:hover {
-  border-color: #38bdf8;
-  transform: scale(1.02);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+.timeline-content:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 25px rgba(56,189,248,0.4);
 }
 
-.timeline-content h3 {
-  margin: 0;
-  font-size: 22px;
-  color: white;
+.timeline-dot{
+  width:18px;
+  height:18px;
+  background:#38bdf8;
+  border-radius:50%;
+  position:absolute;
+  left:50%;
+  top:20px;
+  transform:translateX(-50%);
 }
 
-.timeline-content ul {
-  padding-left: 20px;
-  color: #cbd5e1;
-  font-size: 15px;
-  line-height: 1.6;
+.timeline-content h3{
+  margin:0;
+  color:#38bdf8;
+}
+
+.timeline-content .time{
+  font-size:13px;
+  color:#94a3b8;
+}
+
+.timeline-content p{
+  margin-top:10px;
+  font-size:15px;
+  line-height:1.6;
+}
+
+/* MOBILE TIMELINE */
+
+@media(max-width:768px){
+
+  .timeline::before{
+    left:20px;
+  }
+
+  .timeline-item{
+    justify-content:flex-start !important;
+    padding-left:50px;
+  }
+
+  .timeline-dot{
+    left:20px;
+  }
+
+  .timeline-content{
+    width:100%;
+  }
 }
