@@ -89,3 +89,9 @@ function deleteEffect() {
 }
 
 typeEffect();
+
+faders.forEach((el, index) => {
+  // Add a slight stagger delay based on its order
+  el.style.transitionDelay = `${index * 0.15}s`; 
+  observer.observe(el);
+});
