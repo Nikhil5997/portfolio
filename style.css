@@ -83,11 +83,13 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
-    padding: 100px 60px;
+    padding: 120px 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: radial-gradient(circle at top right, #1e293b, #0f172a 60%);
 }
+
 
 .hero-glow {
     position: absolute;
@@ -105,7 +107,8 @@ body {
     align-items: center;
     gap: 80px;
     max-width: 1200px;
-    z-index: 1;
+    z-index: 5;
+     position: relative;
 }
 
 .hero-img-container {
