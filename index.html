@@ -1,233 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nikhil Oberoi</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header class="navbar" id="navbar">
-    <div class="nav-container">
-      <h1 class="logo">Nikhil <span>Oberoi</span></h1>
-      <nav class="nav-links">
-        <a href="#projects">📂 Projects</a>
-        <a href="#experience">💼 Experience</a>
-        <a href="#about">👨‍💻 About</a>
-        <a href="#contact" class="nav-cta">Let's Talk</a>
-      </nav>
-    </div>
-  </header>
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <h1 class="logo">Nikhil <span>Oberoi</span></h1>
+    <nav class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+    </nav>
+  </div>
+</header>
 
-  <section class="hero">
-    <div class="hero-glow"></div>
-    <div class="hero-content">
-      <div class="hero-img-container fade-up">
-        <div class="img-outline"></div>
-        <div class="hero-img">
-          <img src="MY.jpg" alt="Nikhil Oberoi">
-        </div>
-        <div class="floating-badge badge-1">🚀 10+ Apps</div>
-        <div class="floating-badge badge-2">📱 React Native</div>
+<section class="hero">
+  <div class="hero-content">
+
+    <div class="hero-img-container fade-up">
+      <div class="img-outline"></div>
+      <div class="hero-img">
+        <img src="MY.jpg" alt="Nikhil Oberoi">
       </div>
-
-      <div class="hero-text fade-up">
-        <h2>Hello, I'm <span class="name-highlight">Nikhil Oberoi</span></h2>
-        <div class="typing-container">
-          <span id="typing-text"></span>
-        </div>
-        <p class="hero-description">Engineering high-performance cross-platform experiences with a focus on AR/VR and Fintech.</p>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <h4 class="counter" data-target="10">0</h4>
-            <span>Live Apps</span>
-          </div>
-          <div class="stat-card">
-            <h4 class="counter" data-target="3">0</h4>
-            <span>Years Exp.</span>
-          </div>
-        </div>
-        <div class="hero-btns">
-          <button class="primary-btn" onclick="document.getElementById('projects').scrollIntoView()">View My Work</button>
-          <a href="resume.pdf" download class="secondary-btn">Download Resume</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <section id="projects" class="projects-section">
-    <div class="section-header fade-up">
-      <h2>Featured Projects</h2>
-      <div class="underline"></div>
+      <div class="floating-badge badge-1">🚀 10+ Apps</div>
+      <div class="floating-badge badge-2">📱 React Native</div>
     </div>
 
-    <div class="project-container">
-      <div class="project-card fade-up">
-        <div class="card-inner">
-          <div class="project-img-box">
-            <img src="popular.png" alt="Popular Patient App">
-            <div class="status-badge">Healthcare</div>
-          </div>
-          <div class="project-info">
-            <h3>Popular Patient App</h3>
-            <p>Full-scale healthcare ecosystem for real-time medical management and consultations.</p>
-            <div class="tech-stack"><span>React Native</span><span>Redux</span><span>REST API</span></div>
-            <div class="card-footer"><a href="https://play.google.com/store/apps/details?id=com.tenwek" target="_blank" class="view-btn">View Store</a></div>
-          </div>
+    <div class="hero-text fade-up">
+      <h2>Hello, I'm <span class="name-highlight">Nikhil Oberoi</span></h2>
+      <p class="hero-description">
+        Engineering high-performance cross-platform experiences with focus on AR/VR & Fintech.
+      </p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h4>10+</h4>
+          <span>Live Apps</span>
+        </div>
+        <div class="stat-card">
+          <h4>3+</h4>
+          <span>Years Exp.</span>
         </div>
       </div>
 
-      <div class="project-card fade-up">
-        <div class="card-inner">
-          <div class="project-img-box">
-            <img src="bonzorfashion.webp" alt="Bonzor Fashion" class="app-icon-fix">
-            <div class="status-badge">E-Commerce</div>
-          </div>
-          <div class="project-info">
-            <h3>Bonzor Fashion</h3>
-            <p>Modern fashion marketplace featuring seamless browsing and secure payment gateway.</p>
-            <div class="tech-stack"><span>E-Commerce</span><span>Payments</span><span>UX</span></div>
-            <div class="card-footer"><a href="https://play.google.com/store/apps/details?id=com.bonzorfashion" target="_blank" class="view-btn">View Store</a></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card fade-up">
-        <div class="card-inner">
-          <div class="project-img-box">
-            <img src="onTimepay.webp" alt="OntimePay">
-            <div class="status-badge">Fintech</div>
-          </div>
-          <div class="project-info">
-            <h3>OntimePay</h3>
-            <p>Digital wallet for secure recharges, bill payments, and real-time tracking.</p>
-            <div class="tech-stack"><span>Wallet</span><span>Auth</span><span>API</span></div>
-            <div class="card-footer"><a href="https://play.google.com/store/apps/details?id=com.ontimepay" target="_blank" class="view-btn">View Store</a></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card fade-up">
-        <div class="card-inner">
-          <div class="project-img-box">
-            <img src="Rombo.webp" alt="Rombo Tracking" class="app-icon-fix">
-            <div class="status-badge">Enterprise</div>
-          </div>
-          <div class="project-info">
-            <h3>Rombo Tracking</h3>
-            <p>Workforce management app for real-time location and employee productivity.</p>
-            <div class="tech-stack"><span>Live Tracking</span><span>Biometric</span></div>
-            <div class="card-footer"><a href="https://play.google.com/store/search?q=Rombo" target="_blank" class="view-btn">View Store</a></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card fade-up">
-        <div class="card-inner">
-          <div class="project-img-box">
-            <img src="gtc.png" alt="GTC Cabs">
-            <div class="private-overlay">Private Client</div>
-          </div>
-          <div class="project-info">
-            <h3>GTC Cabs</h3>
-            <p>Taxi dispatch system with complex user flows and Android deployment handling.</p>
-            <div class="tech-stack"><span>Maps</span><span>Real-time</span><span>Redux</span></div>
-            <div class="card-footer"><span class="private-tag">Enterprise System</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card fade-up">
-        <div class="card-inner">
-          <div class="project-img-box">
-            <img src="3d.jpg" alt="3D Face Mesh">
-            <div class="ai-badge">AI Vision</div>
-          </div>
-          <div class="project-info">
-            <h3>3D Face Mesh</h3>
-            <p>Real-time AI detection capturing 3D facial coordinates via Vision Camera.</p>
-            <div class="tech-stack"><span>AI</span><span>Hardware</span><span>Performance</span></div>
-            <div class="card-footer"><span class="private-tag">Private Project</span></div>
-          </div>
-        </div>
+      <div class="hero-btns">
+        <button class="primary-btn" onclick="document.getElementById('projects').scrollIntoView()">View My Work</button>
+        <a href="resume.pdf" download class="secondary-btn">Download Resume</a>
       </div>
     </div>
-  </section>
 
-  <div class="divider"></div>
+  </div>
+</section>
 
-  <section id="experience" class="experience-section">
-    <div class="section-title fade-up">
-      <h2>Work Experience</h2>
-      <div class="underline"></div>
-    </div>
+<div class="divider"></div>
 
-    <div class="timeline-container">
-      <div class="timeline-card left fade-up">
-        <div class="card-glow"></div>
-        <div class="content">
-          <span class="date">Feb 2025 – Present</span>
-          <h3>ItDose Infosystem Pvt Ltd</h3>
-          <p>Leading development of scalable mobile applications using React Native. Built hospital systems including patient management and performance optimized apps.</p>
-        </div>
-      </div>
+<section id="projects" class="projects-section">
+  <div class="section-header fade-up">
+    <h2>Featured Projects</h2>
+    <div class="underline"></div>
+  </div>
 
-      <div class="timeline-card right fade-up">
-        <div class="card-glow"></div>
-        <div class="content">
-          <span class="date">Dec 2023 – Jan 2025</span>
-          <h3>Technosoft Technologies</h3>
-          <p>Developed multi-language mobile apps with biometric authentication, role-based access, and REST API integrations.</p>
-        </div>
-      </div>
+  <div class="project-container">
 
-      <div class="timeline-card left fade-up">
-        <div class="card-glow"></div>
-        <div class="content">
-          <span class="date">Nov 2022 – Dec 2023</span>
-          <h3>RyientSoft Pvt Ltd</h3>
-          <p>Designed modern UI applications with Redux state management and optimized loading performance.</p>
-        </div>
-      </div>
+    <!-- Keep your existing project cards here (unchanged structure) -->
 
-      <div class="timeline-card right fade-up">
-        <div class="card-glow"></div>
-        <div class="content">
-          <span class="date">June 2022 – Aug 2022</span>
-          <h3>Ftech Solution</h3>
-          <p>Utilized React to design and develop visually appealing and high-performance components.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <div class="divider"></div>
+<div class="divider"></div>
 
-  <section id="about" class="about fade-up">
-    <h2>About Me</h2>
-    <p>I am a React Native Developer with 3+ years of experience building high-performance mobile applications for Android and iOS. I specialize in scalable apps with clean UI and real-time features.</p>
-  </section>
+<section id="experience" class="experience-section">
+  <div class="section-title fade-up">
+    <h2>Work Experience</h2>
+    <div class="underline"></div>
+  </div>
 
-  <div class="divider"></div>
+  <div class="timeline-container">
+    <!-- Keep your existing timeline cards here -->
+  </div>
+</section>
 
-  <section id="contact" class="contact fade-up">
-    <h2>Contact</h2>
-    <div class="contact-links">
-      <a href="mailto:oberoinikhil1999@gmail.com" class="contact-item">📧 oberoinikhil1999@gmail.com</a>
-      <a href="https://www.linkedin.com/in/nikhil-oberoi-1b2701217" target="_blank" rel="noopener noreferrer" class="contact-item">💼 LinkedIn Profile</a>
-    </div>
-  </section>
+<div class="divider"></div>
 
-  <footer>
-    © 2026 Nikhil Oberoi. All rights reserved.
-  </footer>
+<section id="about" class="about fade-up">
+  <h2>About Me</h2>
+  <p>
+    React Native Developer with 3+ years building scalable Android & iOS apps with clean UI and real-time systems.
+  </p>
+</section>
 
-  <script src="script.js"></script>
+<div class="divider"></div>
+
+<section id="contact" class="contact fade-up">
+  <h2>Contact</h2>
+  <div class="contact-links">
+    <a href="mailto:oberoinikhil1999@gmail.com" class="contact-item">Email Me</a>
+    <a href="https://www.linkedin.com" target="_blank" class="contact-item">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Nikhil Oberoi. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
 </body>
-
 </html>
