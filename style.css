@@ -178,4 +178,98 @@ body {
 }
 
 .card-inner {
-  bac
+  background: rgba(15,23,42,0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(56,189,248,0.1);
+  transition: 0.4s;
+}
+
+.project-card:hover .card-inner {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(56,189,248,0.4);
+  border-color: #38bdf8;
+}
+
+/* ---------- TIMELINE ---------- */
+
+.timeline-container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.timeline-container::after {
+  content:'';
+  position:absolute;
+  width:2px;
+  top:0;
+  bottom:0;
+  left:50%;
+  background: linear-gradient(to bottom,transparent,#38bdf8,transparent);
+}
+
+/* ---------- ABOUT ---------- */
+
+.about {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 60px;
+  background: rgba(30,41,59,0.6);
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* ---------- CONTACT ---------- */
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.contact-item {
+  padding: 12px 25px;
+  border: 1px solid #38bdf8;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.contact-item:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* ---------- ANIMATIONS ---------- */
+
+@keyframes rotate {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:768px){
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    display:none;
+  }
+}
